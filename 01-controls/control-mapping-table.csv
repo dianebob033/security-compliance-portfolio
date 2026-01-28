@@ -1,0 +1,4 @@
+control_id,control_name,domain,framework_mapping,evidence_source,owner,frequency
+IAM-01,MFA for Privileged Access,IAM,Access Control, IAM console/export,Security,Continuous/Quarterly
+LOG-01,CloudTrail Enabled,Logging,Logging/Monitoring,CloudTrail config,SRE/Security,Continuous
+...
