@@ -1,0 +1,21 @@
+risk_id,risk_statement,category,likelihood,impact,score,current_controls,proposed_mitigation,owner,due_date,status,evidence
+R-001,Privileged accounts without MFA,IAM,3,5,15,Partial MFA,Enforce MFA for all privileged access; quarterly review,Security,2026-03-01,In Progress,IAM-01
+R-002,Over-permissive IAM policies (wildcards),IAM,3,4,12,Informal review,Implement least privilege roles; policy review cadence,Security+Eng,2026-03-15,Planned,IAM-02
+R-003,No formal access review process,IAM,3,4,12,None,Quarterly access review with documented approvals,Security,2026-03-30,Planned,IAM-03
+R-004,Root account used for routine operations,IAM,2,5,10,Unknown,Lock down root + MFA + alert on root usage,Security,2026-02-28,Planned,IAM-04
+R-005,CloudTrail not enabled in all regions,Logging,2,5,10,Unknown,Enable CloudTrail org trail; central S3 storage,Cloud/SRE,2026-02-20,Planned,LOG-01
+R-006,Logs lack defined retention/centralization,Logging,3,4,12,Partial logging,Centralize logs; define retention and access controls,Cloud/SRE,2026-03-10,Planned,LOG-02
+R-007,No alerts for high-risk security events,Logging,3,4,12,None,Create alerts for IAM changes/root activity/CloudTrail tamper,Security,2026-03-05,Planned,LOG-03
+R-008,S3 buckets misconfigured (public access),Data,2,5,10,Manual checks,Block public access; periodic checks; least privilege,Cloud/SRE,2026-03-01,Planned,ENC-01
+R-009,Sensitive data not encrypted at rest,Data,2,5,10,Unknown,Enable encryption (S3/RDS/EBS) with KMS and key controls,Cloud/SRE,2026-03-15,Planned,ENC-01
+R-010,TLS not enforced for external endpoints,Data,3,4,12,Partial TLS,Enforce HTTPS/TLS policies; document exceptions,Eng+Security,2026-03-20,Planned,ENC-02
+R-011,Backup schedule not defined for critical data,Backup,3,4,12,Ad hoc backups,Define backup policy; automate backups and monitoring,Cloud/SRE,2026-03-10,Planned,BAK-01
+R-012,No restore testing performed,Backup,3,5,15,None,Quarterly restore test and documentation,Cloud/SRE,2026-04-01,Planned,BAK-02
+R-013,Security changes not tracked/approved,Change,3,4,12,Informal,Use ticket/PR approvals for IAM/logging/network changes,Eng+Security,2026-03-01,Planned,CHG-01
+R-014,Third-party vendor risk not assessed,Vendor,3,4,12,None,Use vendor checklist; require incident notification SLA,Security,2026-03-25,Planned,VEN-01
+R-015,No incident response playbook or roles,IR,3,4,12,None,Create IR playbook with severity levels and roles; tabletop exercise,Security,2026-03-30,Planned,IR-01
+R-016,Lack of log access restrictions (too many readers),Logging,3,4,12,Unknown,Restrict log bucket access; use least privilege and audit access,Cloud/SRE,2026-03-15,Planned,LOG-02
+R-017,No key rotation or KMS admin separation,Data,3,4,12,Default settings,Define KMS key ownership; enable rotation where applicable,Cloud/SRE,2026-04-01,Planned,ENC-01
+R-018,No documented data classification rules,Data,3,3,9,None,Create data classification policy; handling and retention rules,Security,2026-04-05,Planned,Data Policy
+R-019,Secrets stored insecurely (plain text),App,3,5,15,Unknown,Use secret manager; remove secrets from code; rotate credentials,Eng+Security,2026-03-15,Planned,Access Control Policy
+R-020,Insufficient onboarding/offboarding access process,IAM,3,4,12,Manual,Document access request + offboarding within X hours,Security+HR,2026-04-10,Planned,Access Control Policy
