@@ -39,4 +39,11 @@ This repository demonstrates my capability to support Security Compliance / GRC 
 GRC • Risk Management • Security Controls • Audit Readiness • Documentation • AWS Fundamentals
 
 ## Contact
-- LinkedIn: <your link>
+- LinkedIn: www.linkedin.com/in/jiaqi-zhang-49ba84218
+
+## What I’d do in week 1 (on the job)
+1. Validate scope, data classification, and control owners with stakeholders.
+2. Baseline current state vs. the controls checklist; identify top 5 gaps.
+3. Create an evidence collection plan and cadence (who/what/when).
+4. Produce a prioritized remediation plan with owners and due dates.
+5. Set up a lightweight reporting rhythm (weekly status + risk updates).
