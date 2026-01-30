@@ -13,10 +13,21 @@ This repository demonstrates my capability to support Security Compliance / GRC 
 - Compliance mindset: audit-ready evidence, least privilege, logging & retention
 
 ## Key Deliverables
-- Controls Checklist: `01-controls/aws-security-controls-checklist.md`
-- Risk Register: `02-risk/risk-register.csv`
-- Policies/Standards: `03-policies/`
-- Audit Evidence Pack: `04-audit-evidence-pack/`
+### Deliverables (quick links)
+- Context & assumptions: `00-context/scope-and-assumptions.md`
+- AWS shared responsibility summary: `00-context/shared-responsibility-summary.md`
+- Controls checklist (AWS baseline): `01-controls/aws-security-controls-checklist.md`
+- Evidence requirements: `01-controls/evidence-requirements.md`
+- Risk register (CSV): `02-risk/risk-register.csv`
+- Risk scoring method: `02-risk/risk-scoring-method.md`
+- Policies: `03-policies/`  
+  - Access control policy: `03-policies/access-control-policy.md`
+  - Logging & monitoring standard: `03-policies/logging-monitoring-standard.md`
+  - Vendor checklist: `03-policies/vendor-security-checklist.md`
+- Audit evidence pack: `04-audit-evidence-pack/`  
+  - Evidence index: `04-audit-evidence-pack/evidence-index.md`
+  - Audit response walkthrough: `04-audit-evidence-pack/walkthrough-audit-response.md`
+- Incident readiness (lite): `05-incident-readiness/incident-response-playbook-lite.md`
 
 ## How to Use (for reviewers)
 1. Start with the Controls Checklist (what to implement)
